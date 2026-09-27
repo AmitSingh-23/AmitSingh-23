@@ -1,16 +1,28 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**AmitSingh-23/AmitSingh-23** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!-- hero: monochrome ASCII portrait (types in) beside the info card
+     widths are picked so both panels land at the same height. -->
 
-Here are some ideas to get you started:
+<h3><code>amit@github ~ $ whoami</code></h3>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<table>
+<tr>
+<td valign="top"><img src="./amit-ascii.svg" width="370" alt="Amit Singh - ASCII portrait" /></td>
+<td valign="top"><img src="./info-card.svg" width="490" alt="Info Card" /></td>
+</tr>
+</table>
+
+<br>
+<br>
+
+<!-- animated contribution graph: real data, boxes reveal cell by cell
+     (regenerated daily by .github/workflows/update-profile-art.yml) -->
+
+<h3><code>amit@github ~ $ ./contributions.sh</code></h3>
+
+<img src="./contrib-heatmap.svg" width="860" alt="Amit's GitHub contribution graph - auto-refreshed daily" />
+
+<br>
+<br>
+
+</div>
