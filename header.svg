@@ -1,44 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" role="img" aria-label="Amit Singh Bisht. Electrical Engineering at NIT Raipur. Backend systems and applied AI.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 330" width="100%" role="img" aria-label="Terminal: Amit Singh Bisht, Electrical Engineering at NIT Raipur. Interests: backend systems, databases, applied ML, competitive programming. Projects: QuerySentinel, EventSnap, IRONside.">
   <title>Amit Singh Bisht</title>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1524"/>
-      <stop offset="1" stop-color="#101c33"/>
-    </linearGradient>
-    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2dd4bf"/>
-      <stop offset="1" stop-color="#60a5fa"/>
-    </linearGradient>
-    <path id="sig" d="M0,250.0 L20,252.4 L40,254.9 L60,257.2 L80,259.0 L100,260.0 L120,260.0 L140,259.0 L160,256.8 L180,253.7 L200,250.0 L220,246.0 L240,242.0 L260,238.7 L280,236.3 L300,235.2 L320,235.5 L340,237.4 L360,240.6 L380,245.0 L400,250.0 L420,255.2 L440,260.0 L460,264.0 L480,266.6 L500,267.6 L520,266.9 L540,264.5 L560,260.5 L580,255.6 L600,250.0 L620,244.4 L640,239.5 L660,235.5 L680,233.1 L700,232.4 L720,233.4 L740,236.0 L760,240.0 L780,244.8 L800,250.0 L820,255.0 L840,259.4 L860,262.6 L880,264.5 L900,264.8 L920,263.7 L940,261.3 L960,258.0 L980,254.0 L1000,250.0 L1020,246.3 L1040,243.2 L1060,241.0 L1080,240.0 L1100,240.0 L1120,241.0 L1140,242.8 L1160,245.1 L1180,247.6 L1200,250.0"/>
-  </defs>
   <style>
-    .name { font: 700 64px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #f1f5f9; letter-spacing: -1px; }
-    .tag  { font: 400 26px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #9fb3c8; opacity: 0; animation: cycle 12s infinite; }
-    .t2 { animation-delay: 4s; }
-    .t3 { animation-delay: 8s; }
-    .label { font: 600 15px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #2dd4bf; letter-spacing: 3px; }
-    .rise { animation: rise 1.2s ease-out both; }
-    .flow { stroke-dasharray: 10 14; animation: flow 2.4s linear infinite; }
-    @keyframes cycle { 0% {opacity:0; transform: translateY(8px);} 4% {opacity:1; transform:none;} 30% {opacity:1; transform:none;} 34% {opacity:0; transform: translateY(-8px);} 100% {opacity:0;} }
-    @keyframes rise { from {opacity:0; transform: translateY(14px);} to {opacity:1; transform:none;} }
-    @keyframes flow { to { stroke-dashoffset: -48; } }
-    @media (prefers-reduced-motion: reduce) {
-      .tag, .rise, .flow { animation: none; }
-      .t1 { opacity: 1; }
-      .pulse { display: none; }
-    }
+    text { font: 18px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; white-space: pre; }
+    .p { fill: #7ee787; } .c { fill: #e6edf3; } .o { fill: #79c0ff; } .t { fill: #8b949e; font-size: 13px; }
   </style>
-  <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
-  <g class="rise">
-    <text x="64" y="84" class="label">HELLO, I'M</text>
-    <text x="62" y="152" class="name">Amit Singh Bisht</text>
-  </g>
-  <text x="64" y="200" class="tag t1">Electrical Engineering @ NIT Raipur</text>
-  <text x="64" y="200" class="tag t2">Backend systems · PostgreSQL · Node.js</text>
-  <text x="64" y="200" class="tag t3">Applied AI · LangGraph · PyTorch Geometric</text>
-  <use href="#sig" fill="none" stroke="url(#wave)" stroke-width="1.5" opacity="0.25"/>
-  <use href="#sig" class="flow" fill="none" stroke="url(#wave)" stroke-width="2.5" stroke-linecap="round"/>
-  <circle class="pulse" r="5" fill="#f1f5f9">
-    <animateMotion dur="6s" repeatCount="indefinite"><mpath href="#sig"/></animateMotion>
-  </circle>
+  <defs><clipPath id="c0"><rect x="36" y="70" height="30" width="0"><set attributeName="width" to="0" begin="loop.begin" dur="0.60s"/><animate attributeName="width" from="24" to="101" begin="loop.begin+0.60s" dur="0.50s" calcMode="discrete" keyTimes="0.000;0.167;0.333;0.500;0.667;0.833;1" values="24;35;45;56;67;78;101" fill="freeze"/></rect></clipPath><clipPath id="c1"><rect x="36" y="104" height="30" width="0"><set attributeName="width" to="0" begin="loop.begin" dur="1.45s"/><set attributeName="width" to="643" begin="loop.begin+1.45s" fill="freeze"/></rect></clipPath><clipPath id="c2"><rect x="36" y="138" height="30" width="0"><set attributeName="width" to="0" begin="loop.begin" dur="2.00s"/><animate attributeName="width" from="24" to="220" begin="loop.begin+2.00s" dur="1.19s" calcMode="discrete" keyTimes="0.000;0.059;0.118;0.176;0.235;0.294;0.353;0.412;0.471;0.529;0.588;0.647;0.706;0.765;0.824;0.882;0.941;1" values="24;35;45;56;67;78;89;100;110;121;132;143;154;165;176;186;197;220" fill="freeze"/></rect></clipPath><clipPath id="c3"><rect x="36" y="172" height="30" width="0"><set attributeName="width" to="0" begin="loop.begin" dur="3.54s"/><set attributeName="width" to="730" begin="loop.begin+3.54s" fill="freeze"/></rect></clipPath><clipPath id="c4"><rect x="36" y="206" height="30" width="0"><set attributeName="width" to="0" begin="loop.begin" dur="4.09s"/><animate attributeName="width" from="24" to="166" begin="loop.begin+4.09s" dur="0.84s" calcMode="discrete" keyTimes="0.000;0.083;0.167;0.250;0.333;0.417;0.500;0.583;0.667;0.750;0.833;0.917;1" values="24;35;45;56;67;78;89;100;110;121;132;143;166" fill="freeze"/></rect></clipPath><clipPath id="c5"><rect x="36" y="240" height="30" width="0"><set attributeName="width" to="0" begin="loop.begin" dur="5.28s"/><set attributeName="width" to="437" begin="loop.begin+5.28s" fill="freeze"/></rect></clipPath></defs>
+  <rect id="bg" width="860" height="330" rx="12" fill="#0d1117" stroke="#30363d"><animate id="loop" attributeName="rx" values="12;12" begin="0s;loop.end" dur="16s"/></rect>
+  <path d="M0 12a12 12 0 0 1 12-12h836a12 12 0 0 1 12 12v30H0z" fill="#161b22"/>
+  <circle cx="24" cy="21" r="6" fill="#ff5f56"/><circle cx="44" cy="21" r="6" fill="#ffbd2e"/><circle cx="64" cy="21" r="6" fill="#27c93f"/>
+  <text x="430" y="26" text-anchor="middle" class="t">amit@nit-raipur: ~</text>
+  <text x="40" y="92" clip-path="url(#c0)"><tspan class="p">$ </tspan><tspan class="c">whoami</tspan></text><text x="40" y="126" clip-path="url(#c1)"><tspan class="o">Amit Singh Bisht · Electrical Engineering @ NIT Raipur '28</tspan></text><text x="40" y="160" clip-path="url(#c2)"><tspan class="p">$ </tspan><tspan class="c">cat interests.txt</tspan></text><text x="40" y="194" clip-path="url(#c3)"><tspan class="o">backend systems · databases · applied ML · competitive programming</tspan></text><text x="40" y="228" clip-path="url(#c4)"><tspan class="p">$ </tspan><tspan class="c">ls projects/</tspan></text><text x="40" y="262" clip-path="url(#c5)"><tspan class="o">QuerySentinel/   EventSnap/   IRONside/</tspan></text>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="loop.begin+5.83s" dur="10.17s"/><text x="40" y="296"><tspan class="p">$ </tspan></text><rect x="62" y="279" width="10" height="21" fill="#7ee787"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/></rect></g>
 </svg>
