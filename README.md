@@ -37,7 +37,7 @@ Turns a photographer's bulk upload into per-person galleries with direct share l
 - Per-person ZIP downloads are streamed on the fly
 
 **Stack:** Node.js, Express, React, MongoDB, Redis, BullMQ, face-api.js, Cloudinary  
-**Code:** [AmitSingh-23/FaceFrame](https://github.com/AmitSingh-23/FaceFrame)
+**Code:** [AmitSingh-23/EventSnap](https://github.com/AmitSingh-23/EventSnap)
 </details>
 
 <details>
