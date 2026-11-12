@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" role="img" aria-label="Amit Singh Bisht. Electrical Engineering at NIT Raipur. Backend systems and applied AI.">
+  <title>Amit Singh Bisht</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1524"/>
+      <stop offset="1" stop-color="#101c33"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <path id="sig" d="M0,250.0 L20,252.4 L40,254.9 L60,257.2 L80,259.0 L100,260.0 L120,260.0 L140,259.0 L160,256.8 L180,253.7 L200,250.0 L220,246.0 L240,242.0 L260,238.7 L280,236.3 L300,235.2 L320,235.5 L340,237.4 L360,240.6 L380,245.0 L400,250.0 L420,255.2 L440,260.0 L460,264.0 L480,266.6 L500,267.6 L520,266.9 L540,264.5 L560,260.5 L580,255.6 L600,250.0 L620,244.4 L640,239.5 L660,235.5 L680,233.1 L700,232.4 L720,233.4 L740,236.0 L760,240.0 L780,244.8 L800,250.0 L820,255.0 L840,259.4 L860,262.6 L880,264.5 L900,264.8 L920,263.7 L940,261.3 L960,258.0 L980,254.0 L1000,250.0 L1020,246.3 L1040,243.2 L1060,241.0 L1080,240.0 L1100,240.0 L1120,241.0 L1140,242.8 L1160,245.1 L1180,247.6 L1200,250.0"/>
+  </defs>
+  <style>
+    .name { font: 700 64px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #f1f5f9; letter-spacing: -1px; }
+    .tag  { font: 400 26px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #9fb3c8; opacity: 0; animation: cycle 12s infinite; }
+    .t2 { animation-delay: 4s; }
+    .t3 { animation-delay: 8s; }
+    .label { font: 600 15px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #2dd4bf; letter-spacing: 3px; }
+    .rise { animation: rise 1.2s ease-out both; }
+    .flow { stroke-dasharray: 10 14; animation: flow 2.4s linear infinite; }
+    @keyframes cycle { 0% {opacity:0; transform: translateY(8px);} 4% {opacity:1; transform:none;} 30% {opacity:1; transform:none;} 34% {opacity:0; transform: translateY(-8px);} 100% {opacity:0;} }
+    @keyframes rise { from {opacity:0; transform: translateY(14px);} to {opacity:1; transform:none;} }
+    @keyframes flow { to { stroke-dashoffset: -48; } }
+    @media (prefers-reduced-motion: reduce) {
+      .tag, .rise, .flow { animation: none; }
+      .t1 { opacity: 1; }
+      .pulse { display: none; }
+    }
+  </style>
+  <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
+  <g class="rise">
+    <text x="64" y="84" class="label">HELLO, I'M</text>
+    <text x="62" y="152" class="name">Amit Singh Bisht</text>
+  </g>
+  <text x="64" y="200" class="tag t1">Electrical Engineering @ NIT Raipur</text>
+  <text x="64" y="200" class="tag t2">Backend systems · PostgreSQL · Node.js</text>
+  <text x="64" y="200" class="tag t3">Applied AI · LangGraph · PyTorch Geometric</text>
+  <use href="#sig" fill="none" stroke="url(#wave)" stroke-width="1.5" opacity="0.25"/>
+  <use href="#sig" class="flow" fill="none" stroke="url(#wave)" stroke-width="2.5" stroke-linecap="round"/>
+  <circle class="pulse" r="5" fill="#f1f5f9">
+    <animateMotion dur="6s" repeatCount="indefinite"><mpath href="#sig"/></animateMotion>
+  </circle>
+</svg>
