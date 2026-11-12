@@ -2,7 +2,7 @@
   <img src="./header.svg" width="100%" alt="Amit Singh Bisht: Electrical Engineering at NIT Raipur, backend systems and applied AI">
 </a>
 
-Electrical Engineering undergraduate at **NIT Raipur** (2024–2028) who builds backend systems and AI-assisted tools. I like problems where the hard part is making something trustworthy: safe to run, honest about its limits, and explainable.
+Electrical Engineering undergraduate at **NIT Raipur** (2024–2028) who builds backend systems and full-stack applications. I like problems where the hard part is making something trustworthy: safe to run, honest about its limits, and explainable.
 
 - Currently building **EventSnap**, an event photo sorter that groups pictures by face
 - Looking for **software engineering internships** (backend, data, applied AI)
