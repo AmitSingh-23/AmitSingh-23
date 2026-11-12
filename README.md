@@ -8,13 +8,13 @@ Electrical Engineering undergraduate at **NIT Raipur** (batch of 2028) who build
 
 ## Stack
 
-| | |
-| --- | --- |
-| **Languages** | C++, Python, JavaScript |
-| **Backend** | Node.js, Express, FastAPI, REST APIs, BullMQ |
-| **Databases** | PostgreSQL, MongoDB, Redis |
-| **Tools** | Docker, Git, GitHub Actions, Postman |
-| **Also used in projects** | PyTorch Geometric, LangGraph, React, ESP32 (Arduino) |
+<p>
+  <img src="https://skillicons.dev/icons?i=cpp,python,js,nodejs,express,fastapi,react&perline=7" alt="C++, Python, JavaScript, Node.js, Express, FastAPI, React">
+  <br>
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,docker,git,githubactions,postman&perline=7" alt="PostgreSQL, MongoDB, Redis, Docker, Git, GitHub Actions, Postman">
+</p>
+
+Also used in projects: PyTorch Geometric, LangGraph, BullMQ, ESP32 (Arduino).
 
 ## Featured projects
 
@@ -51,9 +51,12 @@ Electrical Engineering undergraduate at **NIT Raipur** (batch of 2028) who build
 
 ## Problem solving
 
-<a href="https://leetcode.com/Amit_Singh_Bisht49"><img src="https://leetcard.jacoblin.cool/Amit_Singh_Bisht49?theme=dark&font=Karla" alt="LeetCode statistics for Amit_Singh_Bisht49"></a>
+<p>
+  <a href="https://leetcode.com/Amit_Singh_Bisht49"><img src="https://leetcard.jacoblin.cool/Amit_Singh_Bisht49?theme=dark&font=Karla" height="180" alt="LeetCode statistics for Amit_Singh_Bisht49"></a>
+  <img src="https://streak-stats.demolab.com?user=AmitSingh-23&theme=github-dark-blue&hide_border=true" height="180" alt="GitHub contribution streak for AmitSingh-23">
+</p>
 
-Solutions with a topic-wise index: [AmitSingh-23/LeetCode](https://github.com/AmitSingh-23/LeetCode)
+[LeetCode](https://leetcode.com/Amit_Singh_Bisht49) · [Codeforces](https://codeforces.com/profile/amit.singh.b049) · [CodeChef](https://www.codechef.com/users/amit_singh_b70) · [Solutions with a topic-wise index](https://github.com/AmitSingh-23/LeetCode)
 
 ## Electrical engineering
 
@@ -61,4 +64,4 @@ Industrial training at SJVN's 1500 MW Nathpa Jhakri Hydro Power Station (2026): 
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/amit-singh-bisht-nitrr) · [LeetCode](https://leetcode.com/Amit_Singh_Bisht49) · [GitHub](https://github.com/AmitSingh-23)
+[LinkedIn](https://www.linkedin.com/in/amit-singh-bisht-nitrr) · [LeetCode](https://leetcode.com/Amit_Singh_Bisht49) · [Codeforces](https://codeforces.com/profile/amit.singh.b049) · [CodeChef](https://www.codechef.com/users/amit_singh_b70)
