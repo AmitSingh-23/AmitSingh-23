@@ -69,9 +69,6 @@ A team project for Smart India Hackathon: sensors on a machine, an ESP32 sending
 <p>
   <img src="https://streak-stats.demolab.com?user=AmitSingh-23&theme=github-dark-blue&hide_border=true" alt="GitHub streak stats">
 </p>
-<p>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AmitSingh-23&theme=github-compact&hide_border=true&area=true" width="100%" alt="Contribution activity graph">
-</p>
 
 ### LeetCode
 
