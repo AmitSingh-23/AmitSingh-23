@@ -1,83 +1,64 @@
-<img src="./header.svg" width="100%" alt="Terminal animation: Amit Singh Bisht, Electrical Engineering at NIT Raipur">
+<img src="./header.svg" width="100%" alt="Terminal: Amit Singh Bisht, Electrical Engineering at NIT Raipur. Interests: backend systems, databases, applied ML, competitive programming.">
 
-### Hey, I'm Amit 👋
+## Amit Singh Bisht
 
-I'm an Electrical Engineering student at NIT Raipur (batch of 2028) who got hooked on software along the way. I like solving problems and building things. These days it's mostly backends, and anything that has a database behind it.
+Electrical Engineering undergraduate at **NIT Raipur** (batch of 2028) who builds backend systems. I work mostly with Python, Node.js and PostgreSQL, solve DSA problems in C++, and like projects where software has to deal with something real: a slow database, a queue of heavy jobs, or a sensor on a machine.
 
-- 🔭 Right now I'm working on **EventSnap**, which sorts event photos by the people in them
-- 🧩 I solve DSA problems in C++ on LeetCode, Codeforces and CodeChef
-- ⚡ Did my industrial training at SJVN's 1500 MW Nathpa Jhakri hydro power station
-- 💼 Looking for SDE internships
+**Looking for:** SDE internships, backend-focused.
 
-### Tech I use
+## Stack
 
-<p>
-  <img src="https://skillicons.dev/icons?i=cpp,python,js,nodejs,express,react,fastapi&perline=7" alt="C++, Python, JavaScript, Node.js, Express, React, FastAPI">
-  <br>
-  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,pytorch,docker,git,postman&perline=7" alt="PostgreSQL, MongoDB, Redis, PyTorch, Docker, Git, Postman">
-</p>
+| | |
+| --- | --- |
+| **Languages** | C++, Python, JavaScript |
+| **Backend** | Node.js, Express, FastAPI, REST APIs, BullMQ |
+| **Databases** | PostgreSQL, MongoDB, Redis |
+| **Tools** | Docker, Git, GitHub Actions, Postman |
+| **Also used in projects** | PyTorch Geometric, LangGraph, React, ESP32 (Arduino) |
 
-### Things I've built
+## Featured projects
 
-<details open>
-<summary><b>QuerySentinel</b> · PostgreSQL query optimizer that keeps your data private · Finalist, Code Utsava X.0</summary>
-<br>
+### [QuerySentinel](https://github.com/AmitSingh-23/query-sentinel)
 
-Tells you why a PostgreSQL query is slow and what to do about it. The part I cared about most: no real data or table names ever reach the AI model.
+**Diagnosing slow PostgreSQL queries with AI usually means sending your schema and data to a third party. This doesn't.**
 
-- Masks every literal and schema name before any AI step
-- Reads `EXPLAIN` plans with a small GNN, then suggests indexes and rewrites
-- Tests each suggestion with HypoPG before giving you a migration script
+<a href="https://github.com/AmitSingh-23/query-sentinel"><img src="https://raw.githubusercontent.com/AmitSingh-23/query-sentinel/main/db-opt-platform/docs/screenshots/pipeline_run.png" width="100%" alt="QuerySentinel dashboard showing a pipeline run"></a>
 
-`Python` `FastAPI` `PostgreSQL` `HypoPG` `LangGraph` `PyTorch Geometric` `Docker`
+- **What it does:** masks every literal and table or column name in a query, reads the `EXPLAIN` plan, proposes indexes and rewrites, and tests each index with HypoPG before producing a migration script with a rollback.
+- **My work:** Finalist at Code Utsava X.0. I built the masking gateway, the plan analysis (a small GNN with a rule-based fallback), the HypoPG test harness and the FastAPI and Streamlit layers.
+- **Worth a look:** on a 1M-row demo dataset, one correlated-subquery fix cut the planner's cost estimate by 99.98 %, and a cast-on-indexed-column fix took a measured query from 44.3 ms to 0.009 ms. 211 offline tests; limitations are documented, including that the GNN is trained on synthetic plans.
+- **Stack:** Python, FastAPI, PostgreSQL 16, HypoPG, pglast, LangGraph, PyTorch Geometric, Docker
 
-[See the code →](https://github.com/AmitSingh-23/query-sentinel)
-</details>
+### [EventSnap](https://github.com/AmitSingh-23/EventSnap)
 
-<details>
-<summary><b>EventSnap</b> · upload event photos, get a gallery per person</summary>
-<br>
+**After an event, guests want their own photos, not a folder of two thousand.**
 
-A photographer uploads everything from an event, and each guest gets a link with just their photos. No sign-up, no selfie.
+- **What it does:** a photographer uploads the whole set; faces are detected in a background worker and grouped per person, and each person gets a gallery link and a ZIP download.
+- **My work:** Express API, BullMQ and Redis job queue so uploads never block on face detection, DBSCAN clustering over face embeddings (no need to know how many people attended), and the React dashboard.
+- **Worth a look:** the clustering logic is isolated and unit-tested, uploads are type- and size-limited and rate-limited, and the README states plainly what is missing before it could handle real biometric data.
+- **Stack:** Node.js, Express, MongoDB, Redis, BullMQ, face-api.js, Cloudinary, React
 
-- Face detection runs in a background worker (BullMQ + Redis) so uploads stay fast
-- Faces are grouped with DBSCAN, so it doesn't need to know how many people there are
-- Each person's photos download as a ZIP
+### [IRONside](https://github.com/AmitSingh-23/Ironside-Sih)
 
-`Node.js` `Express` `React` `MongoDB` `Redis` `BullMQ` `face-api.js`
+**Machines usually show signs before they fail. This puts those signs on one screen.**
 
-[See the code →](https://github.com/AmitSingh-23/EventSnap)
-</details>
+<a href="https://github.com/AmitSingh-23/Ironside-Sih"><img src="https://raw.githubusercontent.com/AmitSingh-23/Ironside-Sih/main/docs/screenshots/command-center.webp" width="100%" alt="IRONside asset command center"></a>
 
-<details>
-<summary><b>IRONside</b> · machine health dashboard · Top 50, SIH internal round at NIT Raipur</summary>
-<br>
+- **What it does:** ESP32 firmware reads vibration, temperature, current, voltage and RPM sensors and posts them to an API, which compares readings with each machine's baseline and raises alerts. A dashboard shows fleet health, live charts and 3D machine models.
+- **My work:** team project, Top 50 in NIT Raipur's internal Smart India Hackathon round. I built the Express API and the React dashboard.
+- **Worth a look:** hardware and software in one repo, with the sensor wiring documented. Detection is threshold-based, the dashboard runs on a demo dataset, and storage is in memory; the README says so.
+- **Stack:** ESP32 (Arduino), Node.js, Express, React, Three.js, Recharts
 
-A team project for Smart India Hackathon: sensors on a machine, an ESP32 sending the readings, and a dashboard that flags when something looks off.
+## Problem solving
 
-- ESP32 firmware for vibration, current, temperature and RPM sensors
-- Express API that compares readings with each machine's baseline and raises alerts
-- React dashboard with live charts and 3D machine models
+<a href="https://leetcode.com/Amit_Singh_Bisht49"><img src="https://leetcard.jacoblin.cool/Amit_Singh_Bisht49?theme=dark&font=Karla" alt="LeetCode statistics for Amit_Singh_Bisht49"></a>
 
-`React` `Three.js` `Node.js` `Express` `ESP32`
+Solutions with a topic-wise index: [AmitSingh-23/LeetCode](https://github.com/AmitSingh-23/LeetCode)
 
-[See the code →](https://github.com/AmitSingh-23/Ironside-Sih)
-</details>
+## Electrical engineering
 
-### GitHub activity
+Industrial training at SJVN's 1500 MW Nathpa Jhakri Hydro Power Station (2026): synchronous generators, 400 kV gas-insulated switchgear, SCADA-based plant control and relay protection.
 
-<p>
-  <img src="https://streak-stats.demolab.com?user=AmitSingh-23&theme=github-dark-blue&hide_border=true" alt="GitHub streak stats">
-</p>
+## Contact
 
-### LeetCode
-
-<p>
-  <img src="https://leetcard.jacoblin.cool/Amit_Singh_Bisht49?theme=dark&font=Karla&ext=heatmap" alt="LeetCode stats">
-</p>
-
-### Say hi
-
-<a href="https://www.linkedin.com/in/amit-singh-bisht-nitrr"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-<a href="https://leetcode.com/Amit_Singh_Bisht49"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"></a>
-<a href="https://github.com/AmitSingh-23/LeetCode"><img src="https://img.shields.io/badge/DSA_solutions-181717?style=for-the-badge&logo=github&logoColor=white" alt="DSA solutions"></a>
+[LinkedIn](https://www.linkedin.com/in/amit-singh-bisht-nitrr) · [LeetCode](https://leetcode.com/Amit_Singh_Bisht49) · [GitHub](https://github.com/AmitSingh-23)
